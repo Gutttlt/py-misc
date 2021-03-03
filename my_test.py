@@ -41,7 +41,7 @@ def myeval(op: str, arg1: float, arg2: float) -> float:
                 raise TypeError("Second and third arguments must be floats!");
         return eval(str(arg1) + op + str(arg2));
 
-# Asserts that the function throws an exception in case of a wrong operation
+# Asserts that the function throws right exceptions on non-valid arguments
 def test_myeval1():
         try:
                 assert myeval('?', 1.0, 333.333);
